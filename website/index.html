@@ -3,27 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MetaMask Wallet - Update Required</title>
+  <title>Koi Stealer Simulation GUI</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>MetaMask Security Update</h1>
-    <p>To continue using your wallet securely, please re-authenticate.</p>
-
-    <form id="fake-form">
-      <label for="seed">Seed Phrase</label>
-      <input type="text" id="seed" placeholder="Enter 12-word seed phrase" required />
-      
-      <label for="pass">Wallet Password</label>
-      <input type="password" id="pass" placeholder="Wallet password" required />
-
-      <button type="submit">Update Wallet</button>
-    </form>
-
-    <p class="disclaimer">⚠️ This is a simulated phishing demo for educational purposes only.</p>
+  <div class="header">
+    <h1>🐟 Koi Stealer - Simulation Portal</h1>
+    <p class="subtitle">Simulated macOS stealer for wallets and browser data — educational only.</p>
   </div>
 
+  <div class="main-grid">
+    <!-- LEFT: Explanation -->
+    <div class="card">
+      <h2>📘 How It Works</h2>
+      <ol>
+        <li>Targets fake browser and wallet files (e.g., Chrome, MetaMask).</li>
+        <li>Simulates exfiltration of seed phrases and passwords.</li>
+        <li>Displays stolen data in a terminal-like output panel.</li>
+      </ol>
+    </div>
+
+    <!-- CENTER: Form -->
+    <div class="card">
+      <h2>🔐 Fake Wallet Prompt</h2>
+      <form id="fake-form">
+        <label>Seed Phrase</label>
+        <input type="text" id="seed" placeholder="e.g. burst thunder exit..." />
+
+        <label>Password</label>
+        <input type="password" id="pass" placeholder="••••••••" />
+
+        <button type="submit">Unlock Wallet</button>
+      </form>
+    </div>
+
+    <!-- RIGHT: Simulated Exfil Output -->
+    <div class="card terminal">
+      <h2>💻 Simulated Exfiltration</h2>
+      <pre id="terminal-output">[Waiting for user input...]\n</pre>
+    </div>
+  </div>
+
+  <p class="disclaimer">⚠️ Simulation only. No real data is stored or sent. Intended for educational use.</p>
   <script src="script.js"></script>
 </body>
 </html>
